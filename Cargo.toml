@@ -3,6 +3,9 @@ name = "aoc2024"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+regex = "1.11.1"
+
 [lib]
 
 [targets]
@@ -13,3 +16,7 @@ path = "src/1/main.rs"
 [[bin]]
 name = "day2"
 path = "src/2/main.rs"
+
+[[bin]]
+name = "day3"
+path = "src/3/main.rs"
