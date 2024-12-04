@@ -4,6 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+array2d = "0.3.2"
 regex = "1.11.1"
 
 [lib]
@@ -20,3 +21,7 @@ path = "src/2/main.rs"
 [[bin]]
 name = "day3"
 path = "src/3/main.rs"
+
+[[bin]]
+name = "day4"
+path = "src/4/main.rs"
