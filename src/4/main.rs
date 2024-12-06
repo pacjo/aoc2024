@@ -1,15 +1,5 @@
-use aoc2024::read_lines;
+use aoc2024::read_into_2d_array;
 use array2d::Array2D;
-
-fn read_into_2d_array(filename: &str) -> Array2D<char> {
-    return Array2D::from_rows(
-        &read_lines(filename)
-            .iter()
-            .map(|line| line.chars().collect::<Vec<char>>())
-            .collect::<Vec<Vec<char>>>(),
-    )
-    .unwrap();
-}
 
 fn safe_get(array: &Array2D<char>, i: i32, j: i32) -> char {
     let default = '.';
